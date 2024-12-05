@@ -7,19 +7,20 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import Flashlight from './components/flashlight'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Andrew Ramirez\'s Portfolio',
+    template: '%s | Andrew Ramirez\'s Portfolio',
   },
-  description: 'This is my portfolio.',
+  description: 'Andrew\'s Personal website.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'andrewramirez.io',
+    description: 'All about Andrew Ramirez.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'andrewramirez.io',
     locale: 'en_US',
     type: 'website',
   },
@@ -53,6 +54,7 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+        <Flashlight />
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
