@@ -11,7 +11,6 @@ export async function generateStaticParams() {
   }))
 }
 
-// defines all dynamic routes to pre-render
 export function generateMetadata({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) {
