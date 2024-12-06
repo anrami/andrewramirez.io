@@ -9,8 +9,9 @@ export default function Flashlight() {
     document.body.appendChild(flashlight)
 
     const handleMouseMove = (event) => {
-      flashlight.style.left = `${event.pageX}px`
-      flashlight.style.top = `${event.pageY}px`
+      // Use clientX/Y instead of pageX/Y to be viewport-relative
+      flashlight.style.left = `${event.clientX}px`
+      flashlight.style.top = `${event.clientY}px`
     }
 
     document.addEventListener('mousemove', handleMouseMove)

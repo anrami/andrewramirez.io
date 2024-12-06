@@ -17,26 +17,21 @@
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-}
-
 html {
   min-width: 360px;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 1px, transparent 1px),
-  radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  color-scheme: light;
   background-size: 20px 20px;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+}
+
+html.dark {
+  color-scheme: dark;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
 }
 
 .prose .anchor {
