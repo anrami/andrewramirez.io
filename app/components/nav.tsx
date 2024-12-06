@@ -7,8 +7,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  '/work': {
-    name: 'work experience',
+  '/media/documents/Andrew_Ramirez_Resume.pdf': {
+    name: 'résumé',
+    isExternal: true,
   },
   '/games': {
     name: 'games',

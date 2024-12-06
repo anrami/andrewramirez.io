@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Hi, I'm Andrew Ramirez 👋
+        Hi, I'm Andrew Ramirez. <span className="wave">👋</span>
       </h1>
       <p className="mb-4">
         {`I'm a Software Engineer and Tech Enthusiast based in Seattle WA, that specializes in web technology. My love for technology has been shaped by my passion for Computers, Programming, and Video Games. I've worked on various projects in the tech industry, and I'm always eager to learn more.`}

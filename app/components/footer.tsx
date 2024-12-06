@@ -24,10 +24,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="https://www.linkedin.com/in/anrami/"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">RSS Feed&nbsp;&nbsp;</p>
+            <p className="ml-2 h-7">LinkedIn&nbsp;&nbsp;</p>
           </a>
         </li>
         <li>
@@ -46,10 +46,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/anrami"
+            href="https://github.com/anrami/andrewramirez.io"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">View source</p>
+            <p className="ml-2 h-7">View Source</p>
           </a>
         </li>
       </ul>
