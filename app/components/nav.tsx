@@ -7,7 +7,7 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  '/media/documents/Andrew_Ramirez_Resume.pdf': {
+  'https://linkedin.com/in/anrami': {
     name: 'résumé',
     isExternal: true,
   },
