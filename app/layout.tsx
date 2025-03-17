@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
-import Flashlight from './components/flashlight'
+import { GithubIcon, LinkedinIcon } from './components/icons'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -48,14 +48,13 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        'text-white bg-black',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
-     <body className="antialiased max-w-xl mb-40 mx-4 mt-8 lg:mx-auto overflow-y-auto">
-
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+     <body className="antialiased max-w-6xl mx-auto overflow-y-auto">
+        <main className="flex-auto min-w-0 flex flex-col px-4 md:px-6 lg:px-8">
           <Navbar />
           {children}
           <Footer />

@@ -16,28 +16,51 @@ const navItems = {
   },
 }
 
+const projectFilters = [
+  { id: 'all', name: 'All' },
+  { id: 'web', name: 'Web' },
+  { id: 'mobile', name: 'Mobile' },
+  { id: 'ai', name: 'AI' },
+  { id: 'design', name: 'Design' },
+  { id: 'backend', name: 'Backend' },
+  { id: 'other', name: 'Other' }
+]
+
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
+    <aside className="mb-8 tracking-tight pt-10">
+      <div>
+        <div className="mb-6">
+          <h1 className="text-5xl font-light tracking-tighter mb-4">Andrew Ramirez</h1>
+          <p className="text-gray-400 text-sm mb-6">WEB • MOBILE • FULLSTACK • SEATTLE, WA</p>
+          
+          {/* Navigation links with pill styling */}
+          <nav className="flex flex-wrap mb-8">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full mr-2 mb-2 hover:bg-gray-800 transition-colors"
                 >
                   {name}
                 </Link>
               )
             })}
+          </nav>
+          
+          {/* Project filter tabs */}
+          <div className="flex flex-wrap gap-2 mb-2">
+            {projectFilters.map((filter) => (
+              <button 
+                key={filter.id}
+                className="bg-gray-900 text-xs px-3 py-1 rounded-full text-gray-300 border border-gray-800 hover:bg-gray-800 transition-colors"
+              >
+                {filter.name}
+              </button>
+            ))}
           </div>
-        </nav>
+        </div>
       </div>
     </aside>
   )
