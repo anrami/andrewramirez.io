@@ -36,7 +36,7 @@ export function Navbar() {
       <div>
         <div className="mb-6">
           <h1 className="text-5xl font-light tracking-tighter mb-4">Andrew Ramirez</h1>
-          <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6">WEB • MOBILE • FULLSTACK • SEATTLE, WA</p>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6">WEB • FULLSTACK • DISTRIBUTED SYSTEMS • SEATTLE, WA</p>
           
           {/* Navigation links with rectangular styling */}
           <nav className="flex flex-col w-full space-y-1 mb-8">
@@ -54,8 +54,6 @@ export function Navbar() {
               )
             })}
           </nav>
-          
-          {/* Project filters were moved to page.tsx */}
         </div>
       </div>
     </aside>

@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main>
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 className="font-light text-2xl tracking-tighter mb-4">Projects</h2>
     
         <div className="projects-grid">
           {/* Project 1 - Larger project with longer description */}
@@ -17,19 +17,19 @@ export default function Page() {
               </div>
             </div>
             <div className="text-content">
-              <h3>TaskFlow Pro</h3>
+              <h3 className="font-light tracking-tighter">TaskFlow Pro</h3>
               <div className="tags">
-                <div>React</div>
-                <div>TypeScript</div>
-                <div>Next.js</div>
+                <div className="font-light">React</div>
+                <div className="font-light">TypeScript</div>
+                <div className="font-light">Next.js</div>
               </div>
-              <div className="description">
+              <div className="description font-light">
                 A full-stack web application for managing personal tasks and projects. Features include task scheduling, project tracking, and collaborative workspaces with real-time updates.
                 <br /><br />
                 The app integrates with various productivity tools and provides detailed analytics to help users optimize their workflow.
               </div>
               <div className="read-more">
-                <a href="/projects/project-one" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                <a href="/projects/project-one" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
                   <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -47,15 +47,15 @@ export default function Page() {
               </div>
             </div>
             <div className="text-content">
-              <h3>SecureAPI Gateway</h3>
+              <h3 className="font-light tracking-tighter">SecureAPI Gateway</h3>
               <div className="tags">
-                <div>Node.js</div>
-                <div>Express</div>
-                <div>MongoDB</div>
+                <div className="font-light">Node.js</div>
+                <div className="font-light">Express</div>
+                <div className="font-light">MongoDB</div>
               </div>
-              <div className="description">A high-performance backend service for handling secure API requests with OAuth2 authentication.</div>
+              <div className="description font-light">A high-performance backend service for handling secure API requests with OAuth2 authentication.</div>
               <div className="read-more">
-                <a href="/projects/project-two" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                <a href="/projects/project-two" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
                   <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -73,15 +73,15 @@ export default function Page() {
               </div>
             </div>
             <div className="text-content">
-              <h3>FitTrack Mobile</h3>
+              <h3 className="font-light tracking-tighter">FitTrack Mobile</h3>
               <div className="tags">
-                <div>Mobile</div>
-                <div>React Native</div>
-                <div>Firebase</div>
+                <div className="font-light">Mobile</div>
+                <div className="font-light">React Native</div>
+                <div className="font-light">Firebase</div>
               </div>
-              <div className="description">A cross-platform mobile application for tracking fitness goals and workouts. Includes personalized workout recommendations and progress tracking.</div>
+              <div className="description font-light">A cross-platform mobile application for tracking fitness goals and workouts. Includes personalized workout recommendations and progress tracking.</div>
               <div className="read-more">
-                <a href="/projects/project-three" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                <a href="/projects/project-three" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
                   <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
