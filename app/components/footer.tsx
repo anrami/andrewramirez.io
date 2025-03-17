@@ -1,3 +1,5 @@
+import { GithubIcon, LinkedinIcon, XIcon } from './icons'
+
 function ArrowIcon() {
   return (
     <svg
@@ -17,45 +19,84 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/anrami/"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">LinkedIn&nbsp;&nbsp;</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/anrami"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">Github&nbsp;&nbsp;</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/anrami/andrewramirez.io"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">View Source</p>
-          </a>
-        </li>
-      </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} Andrew Ramirez
-      </p>
+    <footer className="mt-16 mb-16 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div>
+          <div className="flex space-x-5">
+            <a
+              href="https://github.com/anrami"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white transition-colors"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </a>
+            <a
+              href="https://linkedin.com/in/anrami"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white transition-colors"
+              aria-label="LinkedIn"
+            >
+              <LinkedinIcon className="w-5 h-5" />
+            </a>
+            <a
+              href="https://twitter.com/anrami"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white transition-colors"
+              aria-label="Twitter/X"
+            >
+              <XIcon className="w-5 h-5" />
+            </a>
+          </div>
+          <p className="mt-8 text-neutral-600 dark:text-neutral-400">
+            © {new Date().getFullYear()} Andrew Ramirez. All rights reserved.
+          </p>
+        </div>
+          
+        <ul className="mt-8 md:mt-0 flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0">
+          <li>
+            <a
+              className="flex items-center text-neutral-600 transition-all hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+              href="/"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">Home</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center text-neutral-600 transition-all hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+              href="/projects"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">Projects</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center text-neutral-600 transition-all hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+              href="/blog"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">Blog</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center text-neutral-600 transition-all hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/anrami/my-personal-website"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">Source</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   )
 }

@@ -7,11 +7,12 @@ export default function Page() {
     <main>
       <section id="projects">
         <h2>Projects</h2>
+    
         <div className="projects-grid">
           {/* Project 1 - Larger project with longer description */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[16/9] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[16/9] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 1 Image
               </div>
             </div>
@@ -28,7 +29,12 @@ export default function Page() {
                 The app integrates with various productivity tools and provides detailed analytics to help users optimize their workflow.
               </div>
               <div className="read-more">
-                <a href="/projects/project-one">Read more</a>
+                <a href="/projects/project-one" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -36,7 +42,7 @@ export default function Page() {
           {/* Project 2 - Smaller project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[16/9] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[16/9] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 2 Image
               </div>
             </div>
@@ -49,7 +55,12 @@ export default function Page() {
               </div>
               <div className="description">A high-performance backend service for handling secure API requests with OAuth2 authentication.</div>
               <div className="read-more">
-                <a href="/projects/project-two">Read more</a>
+                <a href="/projects/project-two" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -57,7 +68,7 @@ export default function Page() {
           {/* Project 3 - Medium-sized project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[1/1] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[1/1] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 3 Image
               </div>
             </div>
@@ -70,7 +81,12 @@ export default function Page() {
               </div>
               <div className="description">A cross-platform mobile application for tracking fitness goals and workouts. Includes personalized workout recommendations and progress tracking.</div>
               <div className="read-more">
-                <a href="/projects/project-three">Read more</a>
+                <a href="/projects/project-three" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -78,7 +94,7 @@ export default function Page() {
           {/* Project 4 - Very large project with detailed description */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[4/3] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[4/3] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 4 Image
               </div>
             </div>
@@ -104,7 +120,12 @@ export default function Page() {
                 Used by over 500 businesses to optimize their operations and drive growth.
               </div>
               <div className="read-more">
-                <a href="/projects/project-four">Read more</a>
+                <a href="/projects/project-four" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -112,7 +133,7 @@ export default function Page() {
           {/* Project 5 - Small project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[16/9] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[16/9] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 5 Image
               </div>
             </div>
@@ -125,7 +146,12 @@ export default function Page() {
               </div>
               <div className="description">A real-time collaborative editor for team documentation with version control.</div>
               <div className="read-more">
-                <a href="/projects/project-five">Read more</a>
+                <a href="/projects/project-five" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -133,7 +159,7 @@ export default function Page() {
           {/* Project 6 - Medium-sized project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[3/2] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[3/2] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 6 Image
               </div>
             </div>
@@ -150,7 +176,12 @@ export default function Page() {
                 Integrates with popular fitness wearables and health platforms.
               </div>
               <div className="read-more">
-                <a href="/projects/project-six">Read more</a>
+                <a href="/projects/project-six" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -158,7 +189,7 @@ export default function Page() {
           {/* Project 7 - Small project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[16/9] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[16/9] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 7 Image
               </div>
             </div>
@@ -171,7 +202,12 @@ export default function Page() {
               </div>
               <div className="description">A lightweight, customizable weather widget that can be embedded in any website.</div>
               <div className="read-more">
-                <a href="/projects/project-seven">Read more</a>
+                <a href="/projects/project-seven" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -179,7 +215,7 @@ export default function Page() {
           {/* Project 8 - Medium project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full aspect-[2/1] bg-gray-100 flex items-center justify-center text-gray-400">
+              <div className="w-full aspect-[2/1] bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
                 Project 8 Image
               </div>
             </div>
@@ -196,7 +232,12 @@ export default function Page() {
                 Resulted in a 35% increase in conversion rate for the client.
               </div>
               <div className="read-more">
-                <a href="/projects/project-eight">Read more</a>
+                <a href="/projects/project-eight" className="inline-flex items-center text-xs mt-2 text-neutral-500 hover:text-accent-primary dark:text-neutral-400 dark:hover:text-accent-primary">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

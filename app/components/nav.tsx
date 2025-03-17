@@ -1,18 +1,23 @@
 import Link from 'next/link'
 
-const navItems = {
+interface NavItem {
+  name: string;
+  isExternal?: boolean;
+}
+
+const navItems: Record<string, NavItem> = {
   '/': {
-    name: 'home',
+    name: 'Home',
+  },
+  '/projects': {
+    name: 'Projects',
   },
   '/blog': {
-    name: 'blog',
+    name: 'Blog',
   },
   'https://linkedin.com/in/anrami': {
-    name: 'résumé',
+    name: 'Résumé',
     isExternal: true,
-  },
-  '/games': {
-    name: 'games',
   },
 }
 
@@ -23,7 +28,6 @@ const projectFilters = [
   { id: 'ai', name: 'AI' },
   { id: 'design', name: 'Design' },
   { id: 'backend', name: 'Backend' },
-  { id: 'other', name: 'Other' }
 ]
 
 export function Navbar() {
@@ -32,16 +36,18 @@ export function Navbar() {
       <div>
         <div className="mb-6">
           <h1 className="text-5xl font-light tracking-tighter mb-4">Andrew Ramirez</h1>
-          <p className="text-gray-400 text-sm mb-6">WEB • MOBILE • FULLSTACK • SEATTLE, WA</p>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6">WEB • MOBILE • FULLSTACK • SEATTLE, WA</p>
           
-          {/* Navigation links with pill styling */}
-          <nav className="flex flex-wrap mb-8">
-            {Object.entries(navItems).map(([path, { name }]) => {
+          {/* Navigation links with rectangular styling */}
+          <nav className="flex flex-col w-full space-y-1 mb-8">
+            {Object.entries(navItems).map(([path, { name, isExternal }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full mr-2 mb-2 hover:bg-gray-800 transition-colors"
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                  className="bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-300 text-sm px-4 py-2 border border-neutral-200 dark:border-neutral-700 transition-colors block w-full"
                 >
                   {name}
                 </Link>
@@ -49,17 +55,7 @@ export function Navbar() {
             })}
           </nav>
           
-          {/* Project filter tabs */}
-          <div className="flex flex-wrap gap-2 mb-2">
-            {projectFilters.map((filter) => (
-              <button 
-                key={filter.id}
-                className="bg-gray-900 text-xs px-3 py-1 rounded-full text-gray-300 border border-gray-800 hover:bg-gray-800 transition-colors"
-              >
-                {filter.name}
-              </button>
-            ))}
-          </div>
+          {/* Project filters were moved to page.tsx */}
         </div>
       </div>
     </aside>
