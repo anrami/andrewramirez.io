@@ -82,6 +82,104 @@ export default function Page() {
             </div>
           </div>
           
+          {/* Project 3 - Calchrome.com */}
+          <div className="project">
+            <div className="project-image-container">
+              <div className="w-full">
+                <Image
+                  src="/media/images/calchrome-homepage.png"
+                  alt="California Chrome Wheels Website"
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="text-content">
+              <h3 className="font-light tracking-tighter">Calchrome.com</h3>
+              <div className="tags">
+                <div className="font-light">WordPress</div>
+                <div className="font-light">WooCommerce</div>
+                <div className="font-light">JavaScript</div>
+              </div>
+              <div className="description font-light">E-commerce website for California Chrome Wheels featuring custom wheel designs and online shopping</div>
+              <div className="read-more">
+                <a href="https://calchrome.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                  <span>Visit Website</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          {/* Project 4 - Marcellinowheels.com */}
+          <div className="project">
+            <div className="project-image-container">
+              <div className="w-full">
+                <Image
+                  src="/media/images/marcellinowheels.jpg"
+                  alt="Marcellino Wheels Website"
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="text-content">
+              <h3 className="font-light tracking-tighter">Marcellinowheels.com</h3>
+              <div className="tags">
+                <div className="font-light">React</div>
+                <div className="font-light">Gatsby</div>
+                <div className="font-light">Shopify</div>
+              </div>
+              <div className="description font-light">Premium wheel manufacturer website with custom product configurator and dealer portal</div>
+              <div className="read-more">
+                <a href="https://marcellinowheels.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                  <span>Visit Website</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          {/* Project 5 - Fusionpowdercoatings.com */}
+          <div className="project">
+            <div className="project-image-container">
+              <div className="w-full">
+                <Image
+                  src="/media/images/fusionpowdercoatings.png"
+                  alt="Fusion Powder Coatings Website"
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="text-content">
+              <h3 className="font-light tracking-tighter">Fusionpowdercoatings.com</h3>
+              <div className="tags">
+                <div className="font-light">HTML/CSS</div>
+                <div className="font-light">JavaScript</div>
+                <div className="font-light">SEO</div>
+              </div>
+              <div className="description font-light">Industrial powder coating service website with project gallery and quote request system</div>
+              <div className="read-more">
+                <a href="https://fusionpowdercoatings.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                  <span>Visit Website</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>
