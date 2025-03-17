@@ -41,7 +41,7 @@ export default function Footer() {
           
           {/* Copyright notice */}
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            © {new Date().getFullYear()} Andrew Ramirez. All rights reserved.
+            © {new Date().getFullYear()} Made with ♥ by Andrew Ramirez. All rights reserved.
           </p>
         </div>
       </div>

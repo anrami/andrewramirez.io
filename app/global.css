@@ -50,6 +50,37 @@ a:hover {
   opacity: 0.8;
 }
 
+/* Cursor animation for typing effect */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 0.8s infinite;
+}
+
+/* Job animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply cursor styles */
+html {
+  cursor: none;
+}
+
+a, button, input, select, textarea {
+  cursor: none;
+}
+
 /* Base theme styles */
 :root {
   --bg-primary: #ffffff;

@@ -1,4 +1,9 @@
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const TypingAnimation = dynamic(() => import('./typing-animation'), {
+  ssr: false
+})
 
 interface NavItem {
   name: string;
@@ -35,7 +40,8 @@ export function Navbar() {
     <aside className="mb-8 tracking-tight pt-10">
       <div>
         <div className="mb-6">
-          <h1 className="text-5xl font-light tracking-tighter mb-4">Andrew Ramirez</h1>
+          <h1 className="text-5xl font-light tracking-tighter mb-4">
+            <TypingAnimation text="Andrew Ramirez" speed={80} /></h1>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6">WEB • FULLSTACK • DISTRIBUTED SYSTEMS • SEATTLE, WA</p>
           
           {/* Navigation links with rectangular styling */}

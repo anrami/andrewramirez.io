@@ -8,6 +8,11 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 import ThemeSwitch from './components/theme-switch'
+import dynamic from 'next/dynamic'
+
+const CursorEffect = dynamic(() => import('./components/cursor-effect'), {
+  ssr: false
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -63,6 +68,7 @@ export default function RootLayout({
           <Analytics />
           <SpeedInsights />
         </main>
+        <CursorEffect />
       </body>
     </html>
   )
