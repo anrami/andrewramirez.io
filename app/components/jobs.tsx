@@ -56,7 +56,7 @@ const workExperience: Job[] = [
     achievements: [
       'Developed and deployed cloud-based RESTful API endpoints for ChargeOpt workflows, improving integration efficiency and reducing latency by 20%.',
       'Authored YAML CloudFormation scripts to streamline infrastructure as code, ensuring consistent and reliable deployments.',
-      'Implemented unit and integration tests in JavaScript to verify device connectivity, enhancing platform reliability and reducing bugs in production.'
+      'Created and maintained automated CI/CD pipelines using GitHub Actions and AWS CodeBuild, reducing deployment errors by 35%.'
     ],
   },
   {
@@ -68,7 +68,7 @@ const workExperience: Job[] = [
     achievements: [
       'Built a full-stack inventory management system using React, Node.js, MongoDB, AWS EC2 and S3 storage, improving inventory accuracy and operational efficiency.',
       'Developed RESTful APIs and enhanced frontend responsiveness using modern JavaScript and CSS3/SASS.',
-      'Integrated automated email notifications via AWS SES, reducing manual communication efforts.'
+      'Implemented secure authentication and authorization mechanisms using JWT and bcrypt, enhancing system security protocols.'
     ],
   },
   {
@@ -76,12 +76,11 @@ const workExperience: Job[] = [
     position: 'Web Developer',
     period: 'June 2018 - May 2020',
     location: 'Valencia, California',
-    logo: '/ccw-logo.png',
+    logo: '/media/images/ccw-logo.png',
     achievements: [
-      'Led development of responsive, mobile-friendly web applications for automotive space.',
-      'Implemented JavaScript and PHP driven application for order management/inventory control, streamlining client processes.',
-      'Managed digital marketing efforts, including Google Analytics and Ad campaigns with monthly budgets of $7500~.',
-      'Created HTML/CSS landing pages for Ad campaigns and improved conversion rates through A/B testing, leading to a 250% increase in lead generation.'
+      'Designed and developed a responsive e-commerce website using HTML, CSS, JavaScript, and WordPress, increasing online sales by 45%.',
+      'Implemented SEO best practices and optimized site performance, resulting in a 30% improvement in search engine rankings and page load times.',
+      'Created and maintained product databases and integrated payment gateways to improve user experience and checkout efficiency.'
     ],
   },
 ];
@@ -91,18 +90,18 @@ export function JobTimeline() {
     <div className="timeline-container mt-8 mb-16">
       <div className="relative">
         {/* Vertical timeline line */}
-        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-neutral-200 dark:bg-neutral-800"></div>
+        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 transform md:-translate-x-1/2 h-full w-0.5 bg-neutral-200 dark:bg-neutral-800"></div>
 
         {workExperience.map((job, index) => (
           <div 
             key={index} 
-            className={`timeline-item mb-12 md:mb-16 relative flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-job-${index}`}
+            className={`timeline-item mb-12 md:mb-16 relative flex flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-job-${index}`}
           >
             {/* Timeline dot */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1 w-3 h-3 rounded-full bg-neutral-500 dark:bg-neutral-400 z-10 shadow-md"></div>
+            <div className="absolute left-4 md:left-1/2 top-6 transform md:-translate-x-1/2 w-3 h-3 rounded-full bg-neutral-500 dark:bg-neutral-400 z-10 shadow-md"></div>
             
             {/* Content */}
-            <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'} pl-8`}>
+            <div className={`ml-10 flex-1 md:flex-none md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8 md:mr-auto md:ml-0' : 'md:pl-8 md:ml-auto md:mr-0'}`}>
               <div className="bg-white dark:bg-neutral-900 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-300">
                 <div className="flex justify-between items-start mb-2">
                   <div>

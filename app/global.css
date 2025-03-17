@@ -19,24 +19,24 @@
 
 html {
   min-width: 360px;
-  color-scheme: light;
+  color-scheme: dark;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #ffffff;
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(145, 215, 244, 0.15) 0%, rgba(145, 215, 244, 0) 40%),
-    radial-gradient(circle at 90% 30%, rgba(250, 176, 255, 0.12) 0%, rgba(250, 176, 255, 0) 40%),
-    radial-gradient(circle at 60% 85%, rgba(125, 211, 252, 0.1) 0%, rgba(125, 211, 252, 0) 45%);
-}
-
-html.dark {
-  color-scheme: dark;
   background-color: #000000;
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0) 40%),
     radial-gradient(circle at 90% 30%, rgba(192, 132, 252, 0.12) 0%, rgba(192, 132, 252, 0) 40%),
     radial-gradient(circle at 60% 85%, rgba(45, 212, 191, 0.1) 0%, rgba(45, 212, 191, 0) 45%);
+}
+
+html.light {
+  color-scheme: light;
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(145, 215, 244, 0.15) 0%, rgba(145, 215, 244, 0) 40%),
+    radial-gradient(circle at 90% 30%, rgba(250, 176, 255, 0.12) 0%, rgba(250, 176, 255, 0) 40%),
+    radial-gradient(circle at 60% 85%, rgba(125, 211, 252, 0.1) 0%, rgba(125, 211, 252, 0) 45%);
 }
 
 /* Global link styles */

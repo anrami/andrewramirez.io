@@ -47,7 +47,7 @@ export function Navbar() {
                   href={path}
                   target={isExternal ? '_blank' : undefined}
                   rel={isExternal ? 'noopener noreferrer' : undefined}
-                  className="bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-300 text-sm px-4 py-2 border border-neutral-200 dark:border-neutral-700 transition-colors block w-full"
+                  className="bg-white hover:bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-300 text-sm px-4 py-2 border border-neutral-200 dark:border-neutral-700 transition-colors block w-full"
                 >
                   {name}
                 </Link>
