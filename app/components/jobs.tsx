@@ -1,5 +1,8 @@
+"use client"
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from 'react'
 
 // Simple placeholder for WorkPosts component
 export function WorkPosts() {
@@ -86,6 +89,17 @@ const workExperience: Job[] = [
 ];
 
 export function JobTimeline() {
+  // State to track which job descriptions are expanded
+  const [expandedJobs, setExpandedJobs] = useState<Record<number, boolean>>({}); 
+
+  // Toggle function for expanding/collapsing job descriptions
+  const toggleJobDescription = (index: number) => {
+    setExpandedJobs(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   return (
     <div className="timeline-container mt-8 mb-16">
       <div className="relative">
@@ -95,7 +109,7 @@ export function JobTimeline() {
         {workExperience.map((job, index) => (
           <div 
             key={index} 
-            className={`timeline-item mb-12 md:mb-16 relative flex flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-job-${index}`}
+            className={`timeline-item relative flex flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-job-${index}`}
           >
             {/* Timeline dot */}
             <div className="absolute left-4 md:left-1/2 top-6 transform md:-translate-x-1/2 w-3 h-3 rounded-full bg-neutral-500 dark:bg-neutral-400 z-10 shadow-md"></div>
@@ -126,11 +140,31 @@ export function JobTimeline() {
                   <p>{job.location}</p>
                 </div>
                 
+                {/* Show only first achievement by default */}
                 <ul className="list-disc list-outside text-sm text-neutral-700 dark:text-neutral-300 ml-4 space-y-1.5">
-                  {job.achievements.map((achievement, i) => (
+                  {job.achievements.slice(0, expandedJobs[index] ? job.achievements.length : 1).map((achievement, i) => (
                     <li key={i}>{achievement}</li>
                   ))}
                 </ul>
+                
+                {/* Read More button - only show if there are multiple achievements */}
+                {job.achievements.length > 0 && (
+                  <button 
+                    onClick={() => toggleJobDescription(index)}
+                    className="inline-flex items-center text-xs mt-3 text-white hover:text-white"
+                  >
+                    <span>{expandedJobs[index] ? 'Show Less' : 'Read More'}</span>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className={`h-3 w-3 ml-1 transition-transform ${expandedJobs[index] ? 'rotate-180' : ''}`} 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                )}
               </div>
             </div>
           </div>

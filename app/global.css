@@ -139,6 +139,10 @@ a, button, input, select, textarea {
   transition-duration: 150ms;
 }
 
+.text-white {
+  color: white !important;
+}
+
 .dark .prose a {
   text-decoration-color: #525252; /* neutral-600 */
 }
@@ -527,8 +531,9 @@ button:hover {
 
 .project:hover {
   transform: translateY(-3px);
-  border-color: var(--accent-primary);
+  border-color: #808080; /* Grey outline on hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  outline: 1px solid #808080; /* Additional grey outline */
 }
 
 @media (min-width: 768px) {

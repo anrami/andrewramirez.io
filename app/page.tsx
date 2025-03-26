@@ -15,6 +15,41 @@ export default function Page() {
         <h2 className="font-light text-2xl tracking-tighter mb-4">Projects</h2>
     
         <div className="projects-grid">
+
+          {/* Project - Halftone Image Editor */}
+          <div className="project">
+            <div className="project-image-container">
+              <div className="w-full">
+                <Image
+                  src="/media/images/half-tone-thumbnail.png"
+                  alt="Halftone Image Editor"
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="text-content">
+              <h3 className="font-light tracking-tighter">Halftone Image Editor</h3>
+              <div className="tags">
+                <div className="font-light">TypeScript</div>
+                <div className="font-light">React</div>
+                <div className="font-light">Canvas API</div>
+                <div className="font-light">SVG</div>
+              </div>
+              <div className="description font-light">An slick image editor that converts media into an SVG file</div>
+              <div className="read-more">
+                <a href="https://halftone.andrewramirez.io" className="inline-flex items-center text-xs mt-2 text-white">
+                  <span>View Project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="project">
             <div className="project-image-container">
               <div className="w-full">
@@ -39,7 +74,7 @@ export default function Page() {
                 A full stack web app that lets users track their daily habit consistency in one view
               </div>
               <div className="read-more">
-                <a href="/projects/project-one" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                <a href="https://github.com/anrami/ticked-off" className="inline-flex items-center text-xs mt-2 text-white">
                   <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -72,7 +107,7 @@ export default function Page() {
               </div>
               <div className="description font-light">A powerful tool that analyzes sentiment trends across multiple data sources using AI</div>
               <div className="read-more">
-                <a href="/projects/project-two" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                <a href="https://github.com/anrami/trend-sentiment-analysis-agent" className="inline-flex items-center text-xs mt-2 text-white">
                   <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -105,8 +140,8 @@ export default function Page() {
               </div>
               <div className="description font-light">E-commerce website for California Chrome Wheels featuring custom wheel designs and online shopping</div>
               <div className="read-more">
-                <a href="https://calchrome.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
-                  <span>Visit Website</span>
+                <a href="/" className="inline-flex items-center text-xs mt-2 text-white">
+                  <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -138,8 +173,8 @@ export default function Page() {
               </div>
               <div className="description font-light">Premium wheel manufacturer website with custom product configurator and dealer portal</div>
               <div className="read-more">
-                <a href="https://marcellinowheels.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
-                  <span>Visit Website</span>
+                <a href="/" className="inline-flex items-center text-xs mt-2 text-white">
+                  <span>View Project</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -171,7 +206,7 @@ export default function Page() {
               </div>
               <div className="description font-light">Industrial powder coating service website with project gallery and quote request system</div>
               <div className="read-more">
-                <a href="https://fusionpowdercoatings.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-neutral-800 dark:text-neutral-200">
+                <a href="https://fusionpowdercoatings.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs mt-2 text-white">
                   <span>Visit Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
