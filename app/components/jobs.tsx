@@ -111,8 +111,10 @@ export function JobTimeline() {
             key={index} 
             className={`timeline-item relative flex flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-job-${index}`}
           >
-            {/* Timeline dot */}
-            <div className="absolute left-4 md:left-1/2 top-6 transform md:-translate-x-1/2 w-3 h-3 rounded-full bg-neutral-500 dark:bg-neutral-400 z-10 shadow-md"></div>
+            {/* Timeline dot with pulsing effect */}
+            <div className="absolute left-4 md:left-1/2 top-6 transform md:-translate-x-1/2 w-3 h-3 rounded-full bg-neutral-500 dark:bg-neutral-400 z-10 shadow-md animate-pulse"  
+              style={{ animationDelay: `${index * 0.5}s` }}
+            ></div>
             
             {/* Content */}
             <div className={`ml-10 flex-1 md:flex-none md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8 md:mr-auto md:ml-0' : 'md:pl-8 md:ml-auto md:mr-0'}`}>
@@ -136,8 +138,7 @@ export function JobTimeline() {
                 </div>
                 
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
-                  <p>{job.period}</p>
-                  <p>{job.location}</p>
+                  <p>{job.period} • {job.location}</p>
                 </div>
                 
                 {/* Show only first achievement by default */}

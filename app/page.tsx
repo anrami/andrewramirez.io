@@ -11,15 +11,15 @@ export default function Page() {
         <JobTimeline />
       </section>
 
-      <section id="projects">
-        <h2 className="font-light text-2xl tracking-tighter mb-4">Projects</h2>
+      <section id="projects" className="mb-12">
+        <h2 className="font-light text-2xl tracking-tighter mb-8">Projects</h2>
     
         <div className="projects-grid">
 
           {/* Project - Halftone Image Editor */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/media/images/half-tone-thumbnail.png"
                   alt="Halftone Image Editor"
@@ -28,6 +28,7 @@ export default function Page() {
                   className="w-full h-auto object-cover"
                   priority
                 />
+                <div className="project-year">Released: 2025</div>
               </div>
             </div>
             <div className="text-content">
@@ -52,7 +53,7 @@ export default function Page() {
 
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/media/images/tickedoff.png"
                   alt="TickedOff Task Management App"
@@ -61,6 +62,7 @@ export default function Page() {
                   className="w-full h-auto"
                   priority
                 />
+                <div className="project-year">Released: 2024</div>
               </div>
             </div>
             <div className="text-content">
@@ -87,7 +89,7 @@ export default function Page() {
           {/* Project 2 - Smaller project */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/sentimentAIAgent.png"
                   alt="Trend Sentiment Analysis AI Agent"
@@ -96,6 +98,7 @@ export default function Page() {
                   className="w-full h-auto"
                   priority
                 />
+                <div className="project-year">Released: 2024</div>
               </div>
             </div>
             <div className="text-content">
@@ -120,7 +123,7 @@ export default function Page() {
           {/* Project 3 - Calchrome.com */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/media/images/calchrome-homepage.png"
                   alt="California Chrome Wheels Website"
@@ -129,6 +132,7 @@ export default function Page() {
                   className="w-full h-auto object-cover"
                   priority
                 />
+                <div className="project-year">Released: 2019</div>
               </div>
             </div>
             <div className="text-content">
@@ -153,7 +157,7 @@ export default function Page() {
           {/* Project 4 - Marcellinowheels.com */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/media/images/marcellinowheels.jpg"
                   alt="Marcellino Wheels Website"
@@ -162,6 +166,7 @@ export default function Page() {
                   className="w-full h-auto object-cover"
                   priority
                 />
+                <div className="project-year">Released: 2019</div>
               </div>
             </div>
             <div className="text-content">
@@ -186,7 +191,7 @@ export default function Page() {
           {/* Project 5 - Fusionpowdercoatings.com */}
           <div className="project">
             <div className="project-image-container">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/media/images/fusionpowdercoatings.png"
                   alt="Fusion Powder Coatings Website"
@@ -195,6 +200,7 @@ export default function Page() {
                   className="w-full h-auto object-cover"
                   priority
                 />
+                <div className="project-year">Released: 2020</div>
               </div>
             </div>
             <div className="text-content">

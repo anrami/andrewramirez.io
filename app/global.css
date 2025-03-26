@@ -72,6 +72,23 @@ a:hover {
   }
 }
 
+/* Timeline dot pulsing animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(128, 128, 128, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(128, 128, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(128, 128, 128, 0);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
 /* Apply cursor styles */
 html {
   cursor: none;
@@ -302,9 +319,8 @@ table {
 }
 
 a:hover {
-  color: #ffffff; 
-  text-shadow: 0 0 5px rgba(255, 255, 255, 1); /* Green glow */
-  transition: color 0.1s ease, text-shadow 0.1s ease-in-out;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 a.button:hover,
@@ -531,9 +547,9 @@ button:hover {
 
 .project:hover {
   transform: translateY(-3px);
-  border-color: #808080; /* Grey outline on hover */
+  border-color: var(--border-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  outline: 1px solid #808080; /* Additional grey outline */
+  border-color: var(--neutral-300, #d4d4d4);
 }
 
 @media (min-width: 768px) {
@@ -603,6 +619,21 @@ button:hover {
   margin-bottom: 0.75rem;
   line-height: 1.6;
   flex-grow: 1;
+}
+
+/* Project year styling */
+.project-year {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  z-index: 2;
 }
 
 .project .read-more a {
